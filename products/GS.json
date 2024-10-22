@@ -1,0 +1,62 @@
+[
+  {
+    "id": 5,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 500.0,
+    "discountPercentage": 420.0,
+    "rating": 3.5,
+    "category": {
+      "image": "/All_Products/laptop5.png",
+      "status": "in stock"
+    }
+  },
+  {
+    "id": 2,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 550.0,
+    "discountPercentage": 480,
+    "rating": 3.5,
+    "category": {
+      "image": "/All_Products/laptop2.png",
+      "status": "in stock"
+    }
+  },
+  {
+    "id": 3,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 800.0,
+    "discountPercentage": 770.0,
+    "rating": 3.94,
+    "category": {
+      "image": "/All_Products/laptop3.png",
+      "status": "in stock"
+    }
+  },
+  {
+    "id": 1,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 550.0,
+    "discountPercentage": 420.0,
+    "rating": 2.5,
+    "category": {
+      "image": "/All_Products/laptop1.png",
+      "status": "in stock"
+    }
+  },
+  {
+    "id": 4,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 880,
+    "discountPercentage": 700.0,
+    "rating": 2.6,
+    "category": {
+      "image": "/All_Products/laptop4.png",
+      "status": "in stock"
+    }
+  }
+]

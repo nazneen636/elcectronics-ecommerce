@@ -1,0 +1,15 @@
+* {
+  @apply font-poppins;
+}
+p {
+  @apply text-[13px];
+}
+.title {
+  @apply font-semibold text-[14px];
+}
+.slick-next::before {
+  display: none;
+}
+.slick-prev::before {
+  display: none;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 499.00,
+    "discountPercentage": 499.00,
+    "rating": 4.94,
+    "category": {
+      "image": "/All_Products/pc1.png",
+      "status": "in stock"
+    }
+  },
+  {
+    "id": 2,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 499.00,
+    "discountPercentage": 499.00,
+    "rating": 4.94,
+    "category": {
+      "image": "/All_Products/pc2.png",
+      "status": "in stock"
+    }
+  },
+  {
+    "id": 3,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 499.00,
+    "discountPercentage": 499.00,
+    "rating": 4.94,
+    "category": {
+      "image": "/All_Products/pc3.png",
+      "status": "in stock"
+    }
+  },
+  {
+    "id": 4,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 499.00,
+    "discountPercentage": 499.00,
+    "rating": 4.94,
+    "category": {
+      "image": "/All_Products/pc4.png",
+      "status": "in stock"
+    }
+  },
+  {
+    "id": 5,
+    "title": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On... ",
+    "description": "Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "price": 499.00,
+    "discountPercentage": 499.00,
+    "rating": 4.94,
+    "category": {
+      "image": "/All_Products/pc5.png",
+      "status": "in stock"
+    }
+  }
+]

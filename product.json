@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Smartphone XYZ",
+    "old_price": 899.99,
+    "new_price": 799.99,
+    "review_star": 4.5,
+    "stock_status": "In Stock",
+    "category": "Smartphones",
+    "product_img": "https://example.com/images/smartphone_xyz.jpg",
+    "color": ["Black", "Silver", "Blue"]
+  },
+  {
+    "id": 2,
+    "title": "4K Ultra HD TV",
+    "old_price": 1499.99,
+    "new_price": 1299.99,
+    "review_star": 4.8,
+    "stock_status": "Out of Stock",
+    "category": "Televisions",
+    "product_img": "https://example.com/images/4k_ultra_hd_tv.jpg",
+    "color": "Black"
+  },
+  {
+    "id": 3,
+    "title": "Wireless Earbuds",
+    "old_price": 199.99,
+    "new_price": 149.99,
+    "review_star": 4.2,
+    "stock_status": "In Stock",
+    "category": "Accessories",
+    "product_img": "https://example.com/images/wireless_earbuds.jpg",
+    "color": ["White", "Black"]
+  },
+  {
+    "id": 4,
+    "title": "Gaming Laptop Pro",
+    "old_price": 1999.99,
+    "new_price": 1799.99,
+    "review_star": 4.7,
+    "stock_status": "In Stock",
+    "category": "Laptops",
+    "product_img": "https://example.com/images/gaming_laptop_pro.jpg",
+    "color": ["Black", "Red"]
+  },
+  {
+    "id": 5,
+    "title": "Bluetooth Speaker",
+    "old_price": 99.99,
+    "new_price": 79.99,
+    "review_star": 4.0,
+    "stock_status": "Out of Stock",
+    "category": "Speakers",
+    "product_img": "https://example.com/images/bluetooth_speaker.jpg",
+    "color": "Blue"
+  }
+]
