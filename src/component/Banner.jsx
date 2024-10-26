@@ -74,7 +74,7 @@ const Banner = () => {
   };
   return (
     <div>
-      <Container>
+      <Container className="z-0">
         <div className="slider_container">
           <Slider {...settings}>
             <div className="">
