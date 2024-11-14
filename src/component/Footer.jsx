@@ -3,6 +3,13 @@ import Container from "../layers/Container";
 import Btn from "../layers/Btn";
 import FooterLi from "../layers/FooterLi";
 import { Link } from "react-router-dom";
+import { FaFacebookSquare } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import visa from "../assets/payment/visa.png";
+import ameExpress from "../assets/payment/american-express.png";
+import maestro from "../assets/payment/maestro.png";
+import paypal from "../assets/payment/paypal.png";
+import discover from "../assets/payment/discover.png";
 
 const Footer = () => {
   return (
@@ -33,7 +40,7 @@ const Footer = () => {
         {/* top part */}
 
         {/* menu part */}
-        <div className="menu flex justify-between">
+        <div className="menu flex justify-between mb-9">
           <div className="menu1">
             <h4 className="font-semibold text-gray_textTwo mb-8">
               Information
@@ -126,9 +133,40 @@ const Footer = () => {
           </div>
         </div>
         {/* menu part */}
-
+        <hr className="border border-[#f0f0f034]" />
         {/* social media or payment part */}
-        <div className="bottom"></div>
+        <div className="bottom flex justify-between mt-4">
+          <div className="social-media flex gap-[14px]">
+            <a href="#" className="">
+              <FaFacebookSquare />
+            </a>
+            <a href="#" className="">
+              <RiInstagramFill />
+            </a>
+          </div>
+          <div className="paymentMethod flex gap-[10px]">
+            <a href="#" className="">
+              <img src={paypal} alt={paypal} />
+            </a>
+            <a href="#" className="">
+              <img src={visa} alt={visa} />
+            </a>
+            <a href="#" className="">
+              <img src={discover} alt={discover} />
+            </a>
+            <a href="#" className="">
+              <img src={maestro} alt={maestro} />
+            </a>
+            <a href="#" className="">
+              <img src={ameExpress} alt={ameExpress} />
+            </a>
+          </div>
+          <div className="copyright">
+            <p className="text-white opacity-60">
+              Copyright © 2020 Shop Pty. Ltd.
+            </p>
+          </div>
+        </div>
         {/* social media or payment part */}
       </Container>
     </div>

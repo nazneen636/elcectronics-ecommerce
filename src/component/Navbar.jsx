@@ -232,7 +232,7 @@ const Navbar = () => {
             </p>
             <a
               className="text-white relative after:absolute after:w-full after:h-[2px] after:bg-white after:left-0 after:top-[102%] after:rounded-[15px]"
-              href="#"
+              href="/contact/Us"
             >
               Contact Us
             </a>

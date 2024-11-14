@@ -1,6 +1,9 @@
 * {
   @apply font-poppins;
 }
+body {
+  @apply text-primary_textColor;
+}
 p {
   @apply text-[13px];
 }
