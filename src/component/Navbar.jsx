@@ -143,7 +143,7 @@ const Navbar = () => {
   // useEffect for useRef
 
   return (
-    <nav className="">
+    <nav className="border-b border-b-[#CACDD8]  fixed w-full z-[100]">
       {/* ==================nav top part========== */}
       <div className="navTop py-4 bg-primary_bgColor px-7 xl:px-0">
         <Container className="text-white flex justify-between items-center font-semibold text-[12px]">
@@ -257,7 +257,7 @@ const Navbar = () => {
       {/* ==================nav top part========== */}
 
       {/* ==================nav bottom part========== */}
-      <div className="navBottom h-[92px] bg-blue xl:bg-transparent text-white xl:text-primary_textColor">
+      <div className="navBottom xl:bg-white h-[92px] bg-blue xl:bg-transparent text-white xl:text-primary_textColor">
         <Container className="relative py-6 flex px-3 xl:px-0 justify-between items-center">
           {/* =================logo==================== */}
           <div className="logo">
@@ -405,9 +405,9 @@ const Navbar = () => {
               )}
             </button>
             {/* ------------------------------- */}
-            <div className="cart">
+            <Link to="/shopping/Cart" className="cart">
               <RiShoppingCartLine className="text-2xl -scale-x-100" />
-            </div>
+            </Link>
             {/* --------------------------------------- */}
             <div className="user">
               <img src={user} alt="" className="w-9 h-9" />

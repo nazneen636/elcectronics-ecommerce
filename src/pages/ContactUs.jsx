@@ -7,6 +7,7 @@ import { HiOutlinePhone } from "react-icons/hi";
 import { TiLocation } from "react-icons/ti";
 import { IoTimeOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
+import Card from "../component/Card";
 
 const ContactUs = () => {
   let [name, setName] = useState();
@@ -15,6 +16,8 @@ const ContactUs = () => {
   let [emailErr, setEmailErr] = useState();
   let [phone, setPhone] = useState();
   let [phoneErr, setPhoneErr] = useState();
+  let [msg, setMsg] = useState();
+  let [msgErr, setMsgErr] = useState();
 
   let manageName = (e) => {
     let na = e.target.value;
@@ -34,6 +37,12 @@ const ContactUs = () => {
     setPhoneErr("");
   };
 
+  let manageMsg = (e) => {
+    let mg = e.target.value;
+    setMsg(mg);
+    setMsgErr("");
+  };
+
   let manageBtn = (e) => {
     e.preventDefault();
     if (!name) {
@@ -44,6 +53,9 @@ const ContactUs = () => {
     }
     if (!phone) {
       setPhoneErr("Phone is required");
+    }
+    if (!msg) {
+      setMsgErr("Required");
     }
   };
   return (
@@ -127,16 +139,14 @@ const ContactUs = () => {
                     What’s on your mind?<span className="text-red">*</span>
                   </label>
                   <textarea
-                    onChange={managePhone}
-                    value={phone}
+                    onChange={manageMsg}
+                    value={msg}
                     className="w-[925px] text-base leading-[20px] border border-lineColor rounded outline-none px-[17px] py-[14px] h-[236px] resize-none"
                     type="text"
                     id="message"
                     placeholder="Jot us a note and we’ll get back to you as quickly as possible"
                   ></textarea>
-                  <p className="text-red absolute left-0 top-full">
-                    {phoneErr}
-                  </p>
+                  <p className="text-red absolute left-0 top-full">{msgErr}</p>
                 </div>
                 {/* ================================== */}
               </div>
@@ -190,10 +200,11 @@ const ContactUs = () => {
           {/* =======shop info============= */}
         </div>
         {/* =====================top=========== */}
-
-        {/* =====================bottom=========== */}
-        {/* =====================bottom=========== */}
       </Container>
+
+      {/* =====================bottom=========== */}
+      <Card />
+      {/* =====================bottom=========== */}
     </div>
   );
 };
