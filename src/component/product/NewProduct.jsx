@@ -5,6 +5,8 @@ import ProductItem from "./ProductItem";
 import axios from "axios";
 import Slider from "react-slick";
 import { MdArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../feature/cartSlice";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -61,31 +63,21 @@ function SamplePrevArrow(props) {
 }
 
 const NewProduct = () => {
-  let [product, setProduct] = useState([]);
-  let [newProduct, setNewProduct] = useState([]);
+  let items = useSelector((state) => state.allCart.data);
+  let dispatch = useDispatch();
 
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        let res = await axios.get("../../../product.json");
-        setProduct(res.data.products);
+  const newProduct = Array.isArray(items?.products)
+    ? items.products.filter((item) => item.isNew)
+    : [];
 
-        const filterNewProducts = res.data.products.filter(
-          (item) => item.isNew
-        );
-        setNewProduct(filterNewProducts);
-      } catch (error) {
-        console.error("Error fetching problem");
-      }
-    };
-    getData();
-  }, []);
+  console.log(items);
+  console.log("Items from Redux:", items);
 
   const settings = {
     dots: false,
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -95,9 +87,11 @@ const NewProduct = () => {
         <Heading headingText="New Products" className="mb-[14px]" />
         <div className="slider-container">
           <Slider {...settings}>
-            {newProduct.map((item, index) => (
+            {newProduct.map((item) => (
               <ProductItem
-                key={index}
+                onClick={() => dispatch(addToCart(item))}
+                key={item.id}
+                productId={item.id}
                 productStock={item.stock}
                 productImg={item.image}
                 productTitle={item.title}

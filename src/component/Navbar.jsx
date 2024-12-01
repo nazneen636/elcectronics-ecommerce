@@ -16,8 +16,10 @@ import { TfiShoppingCart } from "react-icons/tfi";
 import { IoClose, IoTriangle } from "react-icons/io5";
 import { VscTriangleUp } from "react-icons/vsc";
 import { RiShoppingCartLine } from "react-icons/ri";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  let items = useSelector((state) => state.allCart.cart);
   const [todayHours, setTodayHours] = useState(null);
   let [menuShow, SetMenuShow] = useState(false);
   let [lgDevice, SetLgDevice] = useState(false);
@@ -405,8 +407,11 @@ const Navbar = () => {
               )}
             </button>
             {/* ------------------------------- */}
-            <Link to="/shopping/Cart" className="cart">
+            <Link to="/shopping/Cart" className="cart relative">
               <RiShoppingCartLine className="text-2xl -scale-x-100" />
+              <div className="absolute right-[-14px] top-[-14px] h-5 w-5 rounded-full bg-white text-blue xl:bg-blue xl:text-white flex items-center justify-center">
+                <span className="font-medium text-[10px]">{items.length}</span>
+              </div>
             </Link>
             {/* --------------------------------------- */}
             <div className="user">
