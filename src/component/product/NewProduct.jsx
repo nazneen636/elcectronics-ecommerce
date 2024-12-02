@@ -87,10 +87,10 @@ const NewProduct = () => {
         <Heading headingText="New Products" className="mb-[14px]" />
         <div className="slider-container">
           <Slider {...settings}>
-            {newProduct.map((item) => (
+            {newProduct.map((item, index) => (
               <ProductItem
                 onClick={() => dispatch(addToCart(item))}
-                key={item.id}
+                key={index}
                 productId={item.id}
                 productStock={item.stock}
                 productImg={item.image}

@@ -3,7 +3,8 @@ import Banner from "../component/Banner";
 import NewProduct from "../component/product/NewProduct";
 import zip from "../assets/zipBanner.png";
 import Container from "../layers/Container";
-import Gaming from "../component/product/gaming";
+import Laptop from "../component/product/Laptop";
+import Gaming from "../component/product/Gaming";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
           <img src={zip} alt="banner" className="mx-auto" />
         </div>
         <Gaming />
+        <Laptop />
       </Container>
     </div>
   );

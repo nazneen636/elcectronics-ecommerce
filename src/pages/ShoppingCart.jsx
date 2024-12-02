@@ -11,6 +11,15 @@ import { Link } from "react-router-dom";
 import paypal from "../assets/paypal.png";
 import zip from "../assets/zipBanner.png";
 
+const Button = ({ className, btnText }) => {
+  return (
+    <button
+      className={`bg-black rounded-[50px] px-7 py-2 text-white text-sm font-semibold border border-transparent hover:border-[#A2A6B0] hover:text-[#A2A6B0] hover:bg-transparent duration-300 transition-all ${className}`}
+    >
+      {btnText}
+    </button>
+  );
+};
 const ShoppingCart = () => {
   // let items = useSelector((state) => state.allCart.cart);
   let items = useSelector((state) => state.allCart.cart);
@@ -21,7 +30,7 @@ const ShoppingCart = () => {
         <BredCumb />
 
         <div className="flex gap-[60px]">
-          <div className="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
+          <div className="w-full relative overflow-x-auto">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
               <thead className="text-xs  border-b text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
@@ -85,6 +94,13 @@ const ShoppingCart = () => {
                 ))}
               </tbody>
             </table>
+            <div className="flex px-4 mt-6 justify-between">
+              <div className="flex gap-2">
+                <Button btnText="Continue Shopping" />
+                <Button btnText="Clear Shopping Cart" />
+              </div>
+              <Button btnText="Update Shopping Cart" />
+            </div>
           </div>
           <div className="w-[446px] max-h-fit py-5 px-6 bg-light_BgShade">
             <div className="pb-6 border-b border-b-[#cacdd8ab]">

@@ -1,11 +1,13 @@
 import React from "react";
 import ProductItem from "./ProductItem";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import gm1 from "/gamingPc/game.png";
 import { Link } from "react-router-dom";
+import { addToCart } from "../../feature/cartSlice";
 
 const Gaming = () => {
   let items = useSelector((state) => state.allCart.data);
+  let dispatch = useDispatch();
 
   const gamingProduct = Array.isArray(items?.products)
     ? items.products.filter((item) => item.isGaming)
@@ -24,9 +26,10 @@ const Gaming = () => {
             </Link>
           </div>
         </div>
-        {gamingProduct.map((items) => (
+        {gamingProduct.map((items, index) => (
           <ProductItem
-            key={items.id}
+            onClick={() => dispatch(addToCart(items))}
+            key={index}
             productId={items.id}
             productStock={items.stock}
             productImg={items.image}
