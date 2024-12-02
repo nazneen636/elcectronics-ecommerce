@@ -10,13 +10,13 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import Card from "../component/Card";
 
 const ContactUs = () => {
-  let [name, setName] = useState();
+  let [name, setName] = useState("");
   let [nameErr, setNameErr] = useState();
-  let [email, setEmail] = useState();
+  let [email, setEmail] = useState("");
   let [emailErr, setEmailErr] = useState();
-  let [phone, setPhone] = useState();
+  let [phone, setPhone] = useState("");
   let [phoneErr, setPhoneErr] = useState();
-  let [msg, setMsg] = useState();
+  let [msg, setMsg] = useState("");
   let [msgErr, setMsgErr] = useState();
 
   let manageName = (e) => {
