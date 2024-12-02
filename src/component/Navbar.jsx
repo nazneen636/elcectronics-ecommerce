@@ -232,12 +232,12 @@ const Navbar = () => {
             <p className="hidden xl:block">
               Visit our showroom in 1234 Street Adress City Address, 1234 &nbsp;
             </p>
-            <a
+            <Link
               className="text-white relative after:absolute after:w-full after:h-[2px] after:bg-white after:left-0 after:top-[102%] after:rounded-[15px]"
-              href="/contact/Us"
+              to="/contact/Us"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
           {/* call us */}
           <div className="right items-center gap-[14px] hidden xl:flex">
