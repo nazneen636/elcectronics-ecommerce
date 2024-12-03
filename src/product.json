@@ -164,6 +164,67 @@
       "image": "/gamingPc/game5.png",
       "description": "MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty",
       "isGaming": true
+    },
+    {
+      "id": 13,
+      "title": "MSI GS 16 Flex-036AU Laptop Multi Touch",
+      "price": 4990,
+      "oldPrice": 5990,
+      "stock": "In Stock",
+      "rating": 4,
+      "reviews": 4,
+      "image": "/laptop/laptop1.png",
+      "description": "MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty",
+      "isMsiGS": true
+    },
+    {
+      "id": 14,
+      "title": "MSI GS 20 Flex-036AU Laptop",
+      "price": 1990,
+      "oldPrice": 2500,
+      "stock": "Check Availability",
+      "rating": 3,
+      "reviews": 12,
+      "image": "/laptop/laptop4.png",
+      "description": "MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty",
+      "isMsiGS": true
+    },
+    {
+      "id": 15,
+      "title": "MSI GS 22 pro Flex-036AU Laptop",
+      "price": 1599,
+      "oldPrice": 2000,
+      "stock": "In Stock",
+      "rating": 4,
+      "reviews": 4,
+      "image": "/laptop/laptop2.png",
+      "description": "MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty",
+      "isNew": true,
+      "isMsiGS": true
+    },
+    {
+      "id": 16,
+      "title": "MSI GS 17 Flex-036AU Laptop",
+      "price": 1999,
+      "oldPrice": 3000,
+      "stock": "Check Availability",
+      "rating": 3,
+      "reviews": 12,
+      "image": "/laptop/laptop3.png",
+      "description": "MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty",
+      "isMsiGS": true
+    },
+    {
+      "id": 17,
+      "title": "MSI GS 16 Flex-036AU Laptop",
+      "price": 1000,
+      "oldPrice": null,
+      "stock": "Check Availability",
+      "rating": 3,
+      "reviews": 12,
+      "image": "/laptop/laptop1.png",
+      "description": "MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty",
+      "isMsiGS": true
     }
   ]
 }

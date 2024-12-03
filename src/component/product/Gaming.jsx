@@ -14,7 +14,7 @@ const Gaming = () => {
     : [];
   return (
     <div>
-      <div className="grid md:grid-cols-6 mb-[39px]">
+      <div className="grid grid-cols-1 md:grid-cols-6 mb-[39px]">
         <div className="relative">
           <img className="h-full" src={gm1} alt="" />
           <div className="w-full h-full absolute left-1/2 top-1/2 -translate-y-1/2 text-white flex flex-col items-center justify-center -translate-x-1/2">

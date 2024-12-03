@@ -3,8 +3,8 @@ import Banner from "../component/Banner";
 import NewProduct from "../component/product/NewProduct";
 import zip from "../assets/zipBanner.png";
 import Container from "../layers/Container";
-import Laptop from "../component/product/Laptop";
 import Gaming from "../component/product/Gaming";
+import Laptop from "../component/product/laptop/Laptop";
 
 const Home = () => {
   return (

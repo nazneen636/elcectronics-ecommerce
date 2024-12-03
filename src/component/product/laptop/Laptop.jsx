@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import GS from "./GS";
 
 const Laptop = () => {
   return (
-    <div>
-      <ul className="flex gap-7 mb-10">
+    <div className="mb-10">
+      <ul className="flex gap-7 mb-4">
         <NavLink
           to="/"
           className="li font-semibold text-base text-gray_textTwo leading-[140%] hover:text-black relative after:absolute after:w-0 after:h-[3px] after:bg-blue after:left-0 after:top-full hover:after:w-full duration-300 transition-all"
@@ -30,6 +31,7 @@ const Laptop = () => {
           MSI GE Series
         </NavLink>
       </ul>
+      <GS />
     </div>
   );
 };
