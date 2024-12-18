@@ -16,3 +16,7 @@ p {
 .slick-prev::before {
   display: none;
 }
+
+a:active {
+  color: black;
+}

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../layers/Container";
 import BredCumb from "../layers/BredCumb";
 import Card from "../component/Card";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Image } from "antd";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { RxCrossCircled } from "react-icons/rx";
@@ -10,6 +10,9 @@ import { GrFormEdit } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import paypal from "../assets/paypal.png";
 import zip from "../assets/zipBanner.png";
+import { removeToCart } from "../feature/cartSlice";
+import { incrementByQuantity } from "../feature/cartSlice";
+import { decrementByQuantity } from "../feature/cartSlice";
 
 const Button = ({ className, btnText }) => {
   return (
@@ -21,8 +24,9 @@ const Button = ({ className, btnText }) => {
   );
 };
 const ShoppingCart = () => {
-  // let items = useSelector((state) => state.allCart.cart);
   let items = useSelector((state) => state.allCart.cart);
+  let dispatch = useDispatch();
+  let [quantity, setQuantity] = useState(1);
 
   return (
     <div>
@@ -72,21 +76,34 @@ const ShoppingCart = () => {
                           type="button"
                         >
                           <span className="font-semibold text-base text-black">
-                            1
+                            {item.quantity}
                           </span>
                           <div className="flex flex-col">
-                            <IoIosArrowUp className="p-1 cursor-pointer text-xl" />
-                            <IoIosArrowDown className="p-1 cursor-pointer text-xl" />
+                            <IoIosArrowUp
+                              onClick={() =>
+                                dispatch(incrementByQuantity(item))
+                              }
+                              className="p-1 cursor-pointer text-xl"
+                            />
+                            <IoIosArrowDown
+                              onClick={() =>
+                                dispatch(decrementByQuantity(item))
+                              }
+                              className="p-1 cursor-pointer text-xl"
+                            />
                           </div>
                         </button>
                       </div>
                     </td>
                     <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                      $599
+                      {(item.price * item.quantity).toFixed(2)}
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex flex-col gap-2 items-center">
-                        <RxCrossCircled className="text-[#CACDD8] text-3xl cursor-pointer" />
+                        <RxCrossCircled
+                          onClick={() => dispatch(removeToCart(item))}
+                          className="text-[#CACDD8] text-3xl cursor-pointer"
+                        />
                         <i className="fa-regular fa-pen-circle text-[#CACDD8] text-[26px] cursor-pointer"></i>
                       </div>
                     </td>
